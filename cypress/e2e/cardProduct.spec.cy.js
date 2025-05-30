@@ -5,17 +5,17 @@ import CatalogPage from '../pages/catalogPage.js'
 const loginPage = new LoginPage()
 const catalogPage = new CatalogPage()
 
-describe('Catalog SauceDemo', () => {
-    it('Catalog Visible', () => {
+describe('Check Card Product - SauceDemo', () => {
+    it('Catalog Card Items Visible', () => {
         loginPage.accessLoginPage()
         loginPage.loginWithAnyUser(userData.standardUser.username, userData.standardUser.password)
         loginPage.checkAccessValid()
-        catalogPage.checkItemCatalog()
+        catalogPage.checkCardProduct()
     })
-    it('Sort Items By Price - Low to High', () => {
+    it('Catalog Card Items Visible', () => {
         loginPage.accessLoginPage()
         loginPage.loginWithAnyUser(userData.standardUser.username, userData.standardUser.password)
         loginPage.checkAccessValid()
-        catalogPage.sortProductsByPrice()
+        catalogPage.checkAddToCardButton()
     })
 })

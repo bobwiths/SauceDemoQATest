@@ -11,6 +11,17 @@ class CatalogPage {
             priceProduct: ".pricebar",
             imgProduct: ".inventory_item_img",
             checkProductPriceFS: '[data-test="inventory-item-price"]',
+            imgCardProduct: "[data-test='item-4-img-link']",
+            invTitleCardProduct: "[data-test='inventory-item-name']",
+            invDescCard: "[data-test='inventory-item-desc']",
+            addToCartBackpack: "[data-test='add-to-cart-sauce-labs-backpack']",
+            removeBackpack: "[data-test='remove-sauce-labs-backpack']",
+            shoppingCartBadge: "[data-test='shopping-cart-badge']",
+            shoppingCartLink: "[data-test='shopping-cart-link']",
+            checkShoppingCartList: "[data-test='cart-list']",
+            continueShoppingButton: "[data-test='continue-shopping']",
+            priceProductCard: "[data-test='inventory-item-price']",
+            checkButton: "button",
         }
 
         return selectors
@@ -26,6 +37,20 @@ class CatalogPage {
         cy.get(this.selectorsList().priceProduct).eq(0).contains('$7.99')
         cy.get(this.selectorsList().imgProduct).eq(0).click()
         cy.get(this.selectorsList().checkProductPriceFS).contains('$7.99')
+    }
+    checkCardProduct(){
+        cy.get(this.selectorsList().imgCardProduct)
+        cy.get(this.selectorsList().invTitleCardProduct)
+        cy.get(this.selectorsList().invDescCard)
+        cy.get(this.selectorsList().priceProductCard)
+        cy.get(this.selectorsList().checkButton).contains('Add to cart')
+    }
+    checkAddToCardButton(){
+        cy.get(this.selectorsList().addToCartBackpack).click()
+        cy.get(this.selectorsList().shoppingCartBadge).contains('1')
+        cy.get(this.selectorsList().checkButton).contains('Remove')
+        cy.get(this.selectorsList().removeBackpack).click()
+        cy.get(this.selectorsList().checkButton).contains('Add to cart').eq(0)
     }
 }
 
