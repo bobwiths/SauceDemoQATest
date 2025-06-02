@@ -22,9 +22,23 @@ class CatalogPage {
             continueShoppingButton: "[data-test='continue-shopping']",
             priceProductCard: "[data-test='inventory-item-price']",
             checkButton: "button",
+            addToCartGenericButton: ".btn_primary",
         }
 
         return selectors
+    }
+    add2ItensToCart(){
+        cy.get(this.selectorsList().addToCartGenericButton).eq(0).click()
+        cy.get(this.selectorsList().addToCartGenericButton).eq(1).click()
+        cy.get(this.selectorsList().shoppingCartBadge).contains('2')
+        cy.get(this.selectorsList().shoppingCartLink).click()
+    }
+    add3ItensToCart(){
+        cy.get(this.selectorsList().addToCartGenericButton).eq(0).click()
+        cy.get(this.selectorsList().addToCartGenericButton).eq(1).click()
+        cy.get(this.selectorsList().addToCartGenericButton).eq(2).click()
+        cy.get(this.selectorsList().shoppingCartBadge).contains('3')
+        cy.get(this.selectorsList().shoppingCartLink).click()
     }
     checkItemCatalog(){
         cy.get(this.selectorsList().itemTitleLink).click()

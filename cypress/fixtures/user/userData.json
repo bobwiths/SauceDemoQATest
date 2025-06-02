@@ -6,6 +6,11 @@
     "userFail": {
         "username": "test",
         "password": "secret_sauce"
+    },
+    "checkoutInfo": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "postalCode": "050000"
     }
 
 }
