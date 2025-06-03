@@ -1,10 +1,10 @@
 ### Casos de Teste:
 
-#### Login Válido:
+#### 1. Login Válido:
 
-**Cenário:** ***Usuário logando com sucesso no e-commerce.***
+* **Cenário:** ***Usuário logando com sucesso no e-commerce.***
 
-#### Ação:
++ Ação:
 
  - Usuário acessar a página de login.
 
@@ -12,13 +12,16 @@
   
  - Usuário clicar no botão Login.
   
-**Resultado Esperado:** ***Usuário acessa com sucesso o e-commerce e tem acesso ao catálogo de produtos.***
+**Resultado Esperado:** ***Usuário acessa com sucesso o e-commerce e tem acesso ao catálogo de produtos.*** <br><br>
+**Resultado Encontrado:** ***Usuário acessou com sucesso o e-commerce e obteve acesso ao catálogo de produtos.***
 
-#### Login Inválido:
+---
 
-**Cenário:** ***Usuário logando com e-mail/senha incorretos.***
+#### 2. Login Inválido:
 
-#### Ação:
+* **Cenário:** ***Usuário logando com e-mail/senha incorretos.***
+
++ Ação:
 
   - Usuário acessar a página de login.
 
@@ -26,4 +29,5 @@
 
   - Usuário clica no botão Login.
 
-**Resultado Esperado:** ***Alerta de erro aparece com a seguinte mensagem:*** *“E-mail e/ou senha incorretos“.*
+**Resultado Esperado:** ***Alerta de erro aparece com a seguinte mensagem:*** *“E-mail e/ou senha incorretos“.* <br><br>
+**Resultado Encontrado:** ***Mensagem encontrada:*** *"Epic sadface: Username and password do not match any user in this service".*
