@@ -14,6 +14,7 @@ describe('Checkout - SauceDemo', () => {
         loginPage.checkAccessValid()
         catalogPage.add3ItensToCart()
         checkoutPage.removeSecondItemCart()
+        checkoutPage.checkoutProcessSuccess(userData.checkoutInfo.firstName, userData.checkoutInfo.lastName, userData.checkoutInfo.postalCode)
     })
     it('Checkout - Success', () => {
         loginPage.accessLoginPage()
