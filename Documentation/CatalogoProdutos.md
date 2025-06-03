@@ -1,10 +1,10 @@
 ### Casos de Teste:
 
-#### Catálogo Visível:
+#### 1. Catálogo Visível:
 
-**Cenário:** ***Após logar, cliente quer ver os produtos disponíveis no catálogo.***
+* **Cenário:** ***Após logar, cliente quer ver os produtos disponíveis no catálogo.***
 
-#### Ação:
++ **Ação:**
 
   - Usuário verifica os itens disponíveis no catálogo.
 
@@ -12,13 +12,16 @@
 
   - Usuário volta a tela de catálogo.
 
-**Resultado Esperado:** ***Usuário consegue visualizar todos os itens do catálogo, ao clicar no item selecionado vai para uma página dedicada ao item, após clicar para voltar ao catálogo, todos os itens estão visíveis novamente.***
+**Resultado Esperado:** ***Usuário consegue visualizar todos os itens do catálogo, ao clicar no item selecionado vai para uma página dedicada ao item, e após clicar para voltar ao catálogo, todos os itens estão visíveis novamente.*** <br><br>
+**Resultado Encontrado:** ***Usuário conseguiu visualizar todos os itens do catálogo, ao clicar no item selecionado foi direcionado para uma página dedicada ao item, e ao clicar para voltar ao catálogo, todos os itens estavam visíveis novamente.***
 
-#### Ordenar Catálogo:
+---
 
-**Cenário:** ***Após logar, cliente quer ver os produtos disponíveis no catálogo por ordem de preço*** *(menor ao maior).*
+#### 2. Ordenar Catálogo:
 
-#### Ação:
+* **Cenário:** ***Após logar, cliente quer ver os produtos disponíveis no catálogo por ordem de preço*** *(menor ao maior).*
+
++ **Ação:**
 
   - Usuário verifica os itens disponíveis no catálogo.
 
@@ -26,4 +29,5 @@
 
   - Usuário clica no primeiro item.
 
-**Resultado Esperado:** ***Usuário consegue ordenar os itens pelo preço*** *(menor ao maior)* ***e seleciona o primeiro item.***
+**Resultado Esperado:** ***Usuário consegue ordenar os itens pelo preço*** *(menor ao maior)* ***e seleciona o primeiro item.*** <br><br>
+**Resultado Encontrado:** ***Usuário conseguiu ordenar os itens pelo preço*** *(menor ao maior)* ***e conseguiu selecionar o primeiro item da lista.***
