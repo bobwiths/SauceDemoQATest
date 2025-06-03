@@ -1,6 +1,6 @@
 ### Casos de Teste:
 
-#### Visualizar imagem do produto:
+#### 1. Visualizar imagem do produto:
 
 * **Cenário:** ***Acessar a galeria de produtos.***
 
@@ -17,7 +17,7 @@
 
 ---
 
-#### Adicionar produto ao carrinho:
+#### 2. Adicionar produto ao carrinho:
 
 * **Cenário:** ***Acessar a galeria de produtos, selecionar o produto.***
 
